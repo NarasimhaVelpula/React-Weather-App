@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.weather-component{
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  display:inline-block;
+  width:300px;
+  padding:10px;
+  position: fixed;
+  left:45%;
+}
+#myVideo {
+  position: fixed;
+  top:30px;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  
+}

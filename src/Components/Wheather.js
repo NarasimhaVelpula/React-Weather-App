@@ -1,5 +1,5 @@
 import React from 'react'
-
+import background from '../Videos/cloudy-day.jpg'
 function Wheather(props) {
     console.log(props)
     if(props.tempDetails.cod==="404"){
@@ -55,7 +55,8 @@ function Wheather(props) {
     findDayNight(props.tempDetails.weather[0].icon)
     weatherClass="wi wi-"+dayNight+"-"+weatherClass+" display-1"
     return (
-        <div>
+        <div style={{"backgroundImage":`url(${background})`}}>
+        <div className="weather-component m-2">
             <h1 className="py-2">{cityName}</h1>
             <h5>
             <i className={weatherClass}></i>
@@ -63,6 +64,7 @@ function Wheather(props) {
             <h1 className="py-2">{temperature}&deg;</h1>
             {minmaxTemp(minTemp,maxTemp)}
             <h4 className="py-4">{description}</h4>
+        </div>
         </div>
     )
 }

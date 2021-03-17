@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <form onSubmit={changeCity}>
           Enter City Name<input type="text" />
-          <button type="submit">Enter</button>
+          <button style={{"margin-left":"10px"}} type="submit">Enter</button>
 
       </form>
       <Wheather tempDetails={state}/>
