@@ -1,0 +1,11 @@
+
+
+/node_modules
+
+2
+/node_modules
+/build
+.git
+*.md
+.gitignore
+
